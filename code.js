@@ -1,15 +1,15 @@
 /* SETTINGS START */
-const prefix = ";"
-const groupID = 2682972;
+const prefix = "-"
+const groupID = 2962857;
 const bot_token = process.env.botToken;
 const rblxCookie = process.env.rblxCookie;
 const officerRoleE = "Officer";
 const welcomeMessage = "Welcome!";
 const maxXP = 20;
-const xpAuditLogChannelID = "613160274849038342";
-const mainChatChannelID = "565329194301521920";
+const xpAuditLogChannelID = "708017150165778504";
+const mainChatChannelID = "708017444660183061";
 const fireBaseURL = process.env.fireBaseURL;
-const xpName = "xp";
+const xpName = "denarius";
 /* SETTINGS END */
 
 /* PACKAGES START */
@@ -34,7 +34,7 @@ firebase.initializeApp(firebaseConfig)
 
 bot.on('ready', () => {
   console.log('Turned on Discord bot');
-  bot.user.setActivity(`${bot.users.size} comrades!`, { type: 'WATCHING' });
+  bot.user.setActivity(`${bot.users.size} comrades!`, { type: 'COVERING' });
   bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`**Resuming processes! Ready to promote Vividarians!** :wave:`)
 })
 
