@@ -35,7 +35,7 @@ firebase.initializeApp(firebaseConfig)
 bot.on('ready', () => {
   console.log('Turned on Discord bot');
   bot.user.setActivity(`${bot.users.size} comrades!`, { type: 'COVERING' });
-  bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`*Getting Data...! Ready to promote Icarians!** :wave:`)
+  bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`*Getting Data...! Ready to promote Icarians!** :wave:`
 })
 
 bot.on('message', async message => {
